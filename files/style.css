@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+#pocetna {
+    background-image: url('../slike/bilijarBackground.jpg');
+    height: 849px;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  #welcome-text {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:
+          0.07em 0 black,
+          0 0.07em black,
+          -0.07em 0 black,
+          0 -0.07em black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    border: 5px solid black;
+    padding: 2rem;
+  }
+
+  #welcome-text h1, #welcome-text h4, #welcome-text a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800 !important;
+  }
+
+  nav.bg-dark {
+    background-color: black !important;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    height: 70px;
+    text-align: center;
+  }
