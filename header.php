@@ -1,3 +1,10 @@
+<?php
+
+require_once "Database.php";
+$db = new Database("itehdom");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
