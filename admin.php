@@ -1,6 +1,19 @@
 <?php include_once 'header.php'; ?>
 
 <?php
+
+
+if (isset($_POST['delete'])) {
+  if (isset($_POST['delete-id-sto'])) { 
+    $id = $_POST['delete-id-sto'];
+    $db->delete("stolovi", "id", $id);
+  } else if (isset($_POST['delete-id-stap'])) {
+    $id = $_POST['delete-id-stap'];
+    $db->delete("stapovi", "id", $id);
+  }
+}
+
+
 $db->select("stolovi", $rows = "*", null, null, null);
 $stolovi = $db->getResult()->fetch_all(MYSQLI_ASSOC);
 
