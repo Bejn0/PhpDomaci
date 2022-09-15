@@ -22,7 +22,7 @@ if (isset($_POST['dodaj-stap'])) {
     }
   }
 
-  if (empty($marka) || empty($naziv) || empty($tipIgre) || empty($precnikKapice) || empty($opis) || empty($cena) || empty($kozniGrip) || empty($img)) {
+  if (empty($marka) || empty($naziv) || empty($tipIgre) || empty($precnikKapice) || empty($opis) || empty($cena) || is_null($kozniGrip) || empty($img)) {
     array_push($erros, "Sva polja su obavezna !");
   }
 
